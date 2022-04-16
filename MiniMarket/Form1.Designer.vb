@@ -56,7 +56,7 @@ Partial Class MenuUtama
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'LogoutToolStripMenuItem
@@ -68,7 +68,7 @@ Partial Class MenuUtama
         'KeluarToolStripMenuItem
         '
         Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.KeluarToolStripMenuItem.Text = "Keluar"
         '
         'MasterToolStripMenuItem

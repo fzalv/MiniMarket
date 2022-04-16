@@ -3,11 +3,11 @@
 Public Class Login
 
     Sub unlock()
-        MenuUtama.LoginToolStripMenuItem.Enabled = True
-        MenuUtama.LogoutToolStripMenuItem.Enabled = False
-        MenuUtama.MasterToolStripMenuItem.Enabled = False
-        MenuUtama.TransaksiToolStripMenuItem.Enabled = False
-        MenuUtama.LaporanToolStripMenuItem.Enabled = False
+        MenuUtama.LoginToolStripMenuItem.Enabled = False
+        MenuUtama.LogoutToolStripMenuItem.Enabled = True
+        MenuUtama.MasterToolStripMenuItem.Enabled = True
+        MenuUtama.TransaksiToolStripMenuItem.Enabled = True
+        MenuUtama.LaporanToolStripMenuItem.Enabled = True
 
     End Sub
 
@@ -20,7 +20,7 @@ Public Class Login
             MsgBox("Silahkan masukan data dengan benar!")
         Else
             Call koneksi()
-            cmd = New OleDbCommand("select * from tbl_admin where kodeadmin='" & txt_kode.Text & "' and pw_admin '" & txt_pw.Text & "' ", conn)
+            cmd = New OleDbCommand("select * from tbl_admin where kodeadmin='" & txt_kode.Text & "' and pw_admin='" & txt_pw.Text & "'", conn)
             rd = cmd.ExecuteReader
             rd.Read()
             If rd.HasRows Then
@@ -30,5 +30,9 @@ Public Class Login
                 MsgBox("Kode atau Password salah!")
             End If
         End If
+    End Sub
+
+    Private Sub btn_cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_cancel.Click
+        Me.Close()
     End Sub
 End Class

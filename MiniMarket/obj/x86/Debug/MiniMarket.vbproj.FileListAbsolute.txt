@@ -8,3 +8,4 @@ C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.xml
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.pdb
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.Login.resources
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MenuUtama.resources
+C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterAdmin.resources

@@ -8,7 +8,7 @@ Module Module1
     Public lokasidata As String
 
     Public Sub koneksi()
-        lokasidata = "provider=microsoft.jet.oledb.4.0;data source=dbminimarket.accdb"
+        lokasidata = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=dbminimarket.accdb"
         conn = New OleDbConnection(lokasidata)
         If conn.State = ConnectionState.Closed Then conn.Open()
 

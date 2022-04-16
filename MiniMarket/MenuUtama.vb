@@ -16,4 +16,12 @@
     Private Sub LoginToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoginToolStripMenuItem.Click
         Login.ShowDialog()
     End Sub
+
+    Private Sub AdminToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdminToolStripMenuItem.Click
+        MasterAdmin.ShowDialog()
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click
+        Call lock()
+    End Sub
 End Class
