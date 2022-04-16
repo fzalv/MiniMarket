@@ -84,6 +84,12 @@
     <Compile Include="MasterAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MasterKategoriBarang.Designer.vb">
+      <DependentUpon>MasterKategoriBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterKategoriBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MasterSupplier.Designer.vb">
       <DependentUpon>MasterSupplier.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterAdmin.resx">
       <DependentUpon>MasterAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterKategoriBarang.resx">
+      <DependentUpon>MasterKategoriBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterSupplier.resx">
       <DependentUpon>MasterSupplier.vb</DependentUpon>

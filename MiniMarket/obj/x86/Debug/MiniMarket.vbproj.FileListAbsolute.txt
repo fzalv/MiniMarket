@@ -10,3 +10,4 @@ C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.Login.resour
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MenuUtama.resources
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterAdmin.resources
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterSupplier.resources
+C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterKategoriBarang.resources
