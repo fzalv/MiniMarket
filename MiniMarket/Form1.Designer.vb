@@ -34,6 +34,8 @@ Partial Class MenuUtama
         Me.KategoriBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PenerimaanBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PenjualanBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -118,9 +120,22 @@ Partial Class MenuUtama
         '
         'TransaksiToolStripMenuItem
         '
+        Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PenerimaanBarangToolStripMenuItem, Me.PenjualanBarangToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
         Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
+        '
+        'PenerimaanBarangToolStripMenuItem
+        '
+        Me.PenerimaanBarangToolStripMenuItem.Name = "PenerimaanBarangToolStripMenuItem"
+        Me.PenerimaanBarangToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.PenerimaanBarangToolStripMenuItem.Text = "Penerimaan Barang"
+        '
+        'PenjualanBarangToolStripMenuItem
+        '
+        Me.PenjualanBarangToolStripMenuItem.Name = "PenjualanBarangToolStripMenuItem"
+        Me.PenjualanBarangToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.PenjualanBarangToolStripMenuItem.Text = "Penjualan Barang"
         '
         'LaporanToolStripMenuItem
         '
@@ -244,5 +259,7 @@ Partial Class MenuUtama
     Friend WithEvents ToolStripStatusLabel9 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents sttanggal As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents PenerimaanBarangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PenjualanBarangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

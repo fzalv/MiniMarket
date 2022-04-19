@@ -41,4 +41,8 @@
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         stjam.Text = TimeOfDay
     End Sub
+
+    Private Sub PenerimaanBarangToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PenerimaanBarangToolStripMenuItem.Click
+        TransTerimaBarang.ShowDialog()
+    End Sub
 End Class

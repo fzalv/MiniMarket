@@ -12,3 +12,4 @@ C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterAdmin.
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterSupplier.resources
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterKategoriBarang.resources
 C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.MasterBarang.resources
+C:\laragon\www\vbnet\MiniMarket\MiniMarket\obj\x86\Debug\MiniMarket.TransTerimaBarang.resources

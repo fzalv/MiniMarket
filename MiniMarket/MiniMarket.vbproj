@@ -125,6 +125,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TransTerimaBarang.Designer.vb">
+      <DependentUpon>TransTerimaBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransTerimaBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Login.resx">
@@ -150,6 +156,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransTerimaBarang.resx">
+      <DependentUpon>TransTerimaBarang.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
