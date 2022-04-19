@@ -26,6 +26,9 @@ Public Class Login
             If rd.HasRows Then
                 Me.Close()
                 Call unlock()
+                MenuUtama.stkode.Text = rd!kodeadmin
+                MenuUtama.stnama.Text = rd!nm_admin
+                MenuUtama.stlevel.Text = rd!lvl_admin
             Else
                 MsgBox("Kode atau Password salah!")
             End If
