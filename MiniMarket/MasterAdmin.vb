@@ -119,4 +119,8 @@ Public Class MasterAdmin
             End If
         End If
     End Sub
+
+    Private Sub txt_kode_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_kode.TextChanged
+
+    End Sub
 End Class

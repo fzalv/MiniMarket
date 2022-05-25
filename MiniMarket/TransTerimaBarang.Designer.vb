@@ -40,13 +40,30 @@ Partial Class TransTerimaBarang
         Me.lbl_jam = New System.Windows.Forms.Label()
         Me.lbl_admin = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lbl_nama = New System.Windows.Forms.Label()
+        Me.Harga = New System.Windows.Forms.Label()
+        Me.txtkode = New System.Windows.Forms.TextBox()
+        Me.lblharga = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtjumlah = New System.Windows.Forms.TextBox()
+        Me.btn_add = New System.Windows.Forms.Button()
+        Me.dgvterimabarang = New System.Windows.Forms.DataGridView()
+        Me.btnsimpan = New System.Windows.Forms.Button()
+        Me.btntbatal = New System.Windows.Forms.Button()
+        Me.btntutup = New System.Windows.Forms.Button()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblitem = New System.Windows.Forms.Label()
+        Me.lbl_total = New System.Windows.Forms.Label()
+        CType(Me.dgvterimabarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 34)
+        Me.Label1.Location = New System.Drawing.Point(27, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(98, 20)
         Me.Label1.TabIndex = 0
@@ -56,7 +73,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 81)
+        Me.Label2.Location = New System.Drawing.Point(27, 74)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 20)
         Me.Label2.TabIndex = 0
@@ -66,7 +83,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_tlpsup.AutoSize = True
         Me.lbl_tlpsup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_tlpsup.Location = New System.Drawing.Point(127, 227)
+        Me.lbl_tlpsup.Location = New System.Drawing.Point(503, 105)
         Me.lbl_tlpsup.Name = "lbl_tlpsup"
         Me.lbl_tlpsup.Size = New System.Drawing.Size(14, 20)
         Me.lbl_tlpsup.TabIndex = 0
@@ -76,7 +93,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_namasup.AutoSize = True
         Me.lbl_namasup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_namasup.Location = New System.Drawing.Point(127, 128)
+        Me.lbl_namasup.Location = New System.Drawing.Point(503, 44)
         Me.lbl_namasup.Name = "lbl_namasup"
         Me.lbl_namasup.Size = New System.Drawing.Size(14, 20)
         Me.lbl_namasup.TabIndex = 0
@@ -86,7 +103,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 128)
+        Me.Label5.Location = New System.Drawing.Point(388, 44)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 20)
         Me.Label5.TabIndex = 0
@@ -96,7 +113,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_alamatsup.AutoSize = True
         Me.lbl_alamatsup.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_alamatsup.Location = New System.Drawing.Point(127, 176)
+        Me.lbl_alamatsup.Location = New System.Drawing.Point(503, 75)
         Me.lbl_alamatsup.Name = "lbl_alamatsup"
         Me.lbl_alamatsup.Size = New System.Drawing.Size(14, 20)
         Me.lbl_alamatsup.TabIndex = 0
@@ -106,7 +123,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 227)
+        Me.Label7.Location = New System.Drawing.Point(388, 105)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(66, 20)
         Me.Label7.TabIndex = 0
@@ -116,7 +133,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(12, 176)
+        Me.Label8.Location = New System.Drawing.Point(388, 75)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(59, 20)
         Me.Label8.TabIndex = 0
@@ -126,7 +143,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_kodeterima.AutoSize = True
         Me.lbl_kodeterima.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_kodeterima.Location = New System.Drawing.Point(127, 34)
+        Me.lbl_kodeterima.Location = New System.Drawing.Point(142, 44)
         Me.lbl_kodeterima.Name = "lbl_kodeterima"
         Me.lbl_kodeterima.Size = New System.Drawing.Size(57, 20)
         Me.lbl_kodeterima.TabIndex = 0
@@ -135,7 +152,7 @@ Partial Class TransTerimaBarang
         'cbkodesupplier
         '
         Me.cbkodesupplier.FormattingEnabled = True
-        Me.cbkodesupplier.Location = New System.Drawing.Point(131, 80)
+        Me.cbkodesupplier.Location = New System.Drawing.Point(146, 73)
         Me.cbkodesupplier.Name = "cbkodesupplier"
         Me.cbkodesupplier.Size = New System.Drawing.Size(121, 21)
         Me.cbkodesupplier.TabIndex = 1
@@ -144,7 +161,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(373, 34)
+        Me.Label3.Location = New System.Drawing.Point(20, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 20)
         Me.Label3.TabIndex = 0
@@ -154,7 +171,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(373, 81)
+        Me.Label4.Location = New System.Drawing.Point(217, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(39, 20)
         Me.Label4.TabIndex = 0
@@ -164,7 +181,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(373, 129)
+        Me.Label6.Location = New System.Drawing.Point(401, 9)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(54, 20)
         Me.Label6.TabIndex = 0
@@ -174,7 +191,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_tgl.AutoSize = True
         Me.lbl_tgl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_tgl.Location = New System.Drawing.Point(480, 34)
+        Me.lbl_tgl.Location = New System.Drawing.Point(87, 9)
         Me.lbl_tgl.Name = "lbl_tgl"
         Me.lbl_tgl.Size = New System.Drawing.Size(14, 20)
         Me.lbl_tgl.TabIndex = 0
@@ -184,7 +201,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_jam.AutoSize = True
         Me.lbl_jam.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_jam.Location = New System.Drawing.Point(480, 81)
+        Me.lbl_jam.Location = New System.Drawing.Point(262, 9)
         Me.lbl_jam.Name = "lbl_jam"
         Me.lbl_jam.Size = New System.Drawing.Size(14, 20)
         Me.lbl_jam.TabIndex = 0
@@ -194,7 +211,7 @@ Partial Class TransTerimaBarang
         '
         Me.lbl_admin.AutoSize = True
         Me.lbl_admin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_admin.Location = New System.Drawing.Point(480, 129)
+        Me.lbl_admin.Location = New System.Drawing.Point(480, 9)
         Me.lbl_admin.Name = "lbl_admin"
         Me.lbl_admin.Size = New System.Drawing.Size(14, 20)
         Me.lbl_admin.TabIndex = 0
@@ -204,11 +221,167 @@ Partial Class TransTerimaBarang
         '
         Me.Timer1.Enabled = True
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(38, 134)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(46, 20)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "Kode"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(38, 157)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(51, 20)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "Nama"
+        '
+        'lbl_nama
+        '
+        Me.lbl_nama.AutoSize = True
+        Me.lbl_nama.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nama.Location = New System.Drawing.Point(95, 157)
+        Me.lbl_nama.Name = "lbl_nama"
+        Me.lbl_nama.Size = New System.Drawing.Size(14, 20)
+        Me.lbl_nama.TabIndex = 0
+        Me.lbl_nama.Text = "-"
+        '
+        'Harga
+        '
+        Me.Harga.AutoSize = True
+        Me.Harga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Harga.Location = New System.Drawing.Point(330, 160)
+        Me.Harga.Name = "Harga"
+        Me.Harga.Size = New System.Drawing.Size(53, 20)
+        Me.Harga.TabIndex = 0
+        Me.Harga.Text = "Harga"
+        '
+        'txtkode
+        '
+        Me.txtkode.Location = New System.Drawing.Point(99, 136)
+        Me.txtkode.Name = "txtkode"
+        Me.txtkode.Size = New System.Drawing.Size(100, 20)
+        Me.txtkode.TabIndex = 2
+        '
+        'lblharga
+        '
+        Me.lblharga.AutoSize = True
+        Me.lblharga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblharga.Location = New System.Drawing.Point(389, 160)
+        Me.lblharga.Name = "lblharga"
+        Me.lblharga.Size = New System.Drawing.Size(14, 20)
+        Me.lblharga.TabIndex = 0
+        Me.lblharga.Text = "-"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(464, 160)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(60, 20)
+        Me.Label11.TabIndex = 0
+        Me.Label11.Text = "Jumlah"
+        '
+        'txtjumlah
+        '
+        Me.txtjumlah.Location = New System.Drawing.Point(530, 159)
+        Me.txtjumlah.Name = "txtjumlah"
+        Me.txtjumlah.Size = New System.Drawing.Size(39, 20)
+        Me.txtjumlah.TabIndex = 2
+        '
+        'btn_add
+        '
+        Me.btn_add.Location = New System.Drawing.Point(593, 156)
+        Me.btn_add.Name = "btn_add"
+        Me.btn_add.Size = New System.Drawing.Size(63, 23)
+        Me.btn_add.TabIndex = 3
+        Me.btn_add.Text = "Add"
+        Me.btn_add.UseVisualStyleBackColor = True
+        '
+        'dgvterimabarang
+        '
+        Me.dgvterimabarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvterimabarang.Location = New System.Drawing.Point(13, 191)
+        Me.dgvterimabarang.Name = "dgvterimabarang"
+        Me.dgvterimabarang.Size = New System.Drawing.Size(643, 167)
+        Me.dgvterimabarang.TabIndex = 4
+        '
+        'btnsimpan
+        '
+        Me.btnsimpan.Location = New System.Drawing.Point(20, 364)
+        Me.btnsimpan.Name = "btnsimpan"
+        Me.btnsimpan.Size = New System.Drawing.Size(63, 23)
+        Me.btnsimpan.TabIndex = 3
+        Me.btnsimpan.Text = "Simpan"
+        Me.btnsimpan.UseVisualStyleBackColor = True
+        '
+        'btntbatal
+        '
+        Me.btntbatal.Location = New System.Drawing.Point(89, 364)
+        Me.btntbatal.Name = "btntbatal"
+        Me.btntbatal.Size = New System.Drawing.Size(63, 23)
+        Me.btntbatal.TabIndex = 3
+        Me.btntbatal.Text = "Batal"
+        Me.btntbatal.UseVisualStyleBackColor = True
+        '
+        'btntutup
+        '
+        Me.btntutup.Location = New System.Drawing.Point(158, 364)
+        Me.btntutup.Name = "btntutup"
+        Me.btntutup.Size = New System.Drawing.Size(63, 23)
+        Me.btntutup.TabIndex = 3
+        Me.btntutup.Text = "Tutup"
+        Me.btntutup.UseVisualStyleBackColor = True
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(547, 367)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(41, 20)
+        Me.Label12.TabIndex = 0
+        Me.Label12.Text = "Item"
+        '
+        'lblitem
+        '
+        Me.lblitem.AutoSize = True
+        Me.lblitem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblitem.Location = New System.Drawing.Point(594, 367)
+        Me.lblitem.Name = "lblitem"
+        Me.lblitem.Size = New System.Drawing.Size(14, 20)
+        Me.lblitem.TabIndex = 0
+        Me.lblitem.Text = "-"
+        '
+        'lbl_total
+        '
+        Me.lbl_total.AutoSize = True
+        Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_total.Location = New System.Drawing.Point(481, 364)
+        Me.lbl_total.Name = "lbl_total"
+        Me.lbl_total.Size = New System.Drawing.Size(18, 20)
+        Me.lbl_total.TabIndex = 0
+        Me.lbl_total.Text = "0"
+        Me.lbl_total.Visible = False
+        '
         'TransTerimaBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(694, 434)
+        Me.ClientSize = New System.Drawing.Size(674, 397)
+        Me.Controls.Add(Me.dgvterimabarang)
+        Me.Controls.Add(Me.btntutup)
+        Me.Controls.Add(Me.btntbatal)
+        Me.Controls.Add(Me.btnsimpan)
+        Me.Controls.Add(Me.btn_add)
+        Me.Controls.Add(Me.txtjumlah)
+        Me.Controls.Add(Me.txtkode)
         Me.Controls.Add(Me.cbkodesupplier)
         Me.Controls.Add(Me.lbl_kodeterima)
         Me.Controls.Add(Me.Label8)
@@ -218,6 +391,15 @@ Partial Class TransTerimaBarang
         Me.Controls.Add(Me.lbl_jam)
         Me.Controls.Add(Me.lbl_tgl)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblitem)
+        Me.Controls.Add(Me.lbl_total)
+        Me.Controls.Add(Me.lblharga)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Harga)
+        Me.Controls.Add(Me.lbl_nama)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.lbl_alamatsup)
         Me.Controls.Add(Me.Label5)
@@ -228,6 +410,7 @@ Partial Class TransTerimaBarang
         Me.Name = "TransTerimaBarang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TransTerimaBarang"
+        CType(Me.dgvterimabarang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -249,4 +432,20 @@ Partial Class TransTerimaBarang
     Friend WithEvents lbl_jam As System.Windows.Forms.Label
     Friend WithEvents lbl_admin As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents lbl_nama As System.Windows.Forms.Label
+    Friend WithEvents Harga As System.Windows.Forms.Label
+    Friend WithEvents txtkode As System.Windows.Forms.TextBox
+    Friend WithEvents lblharga As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtjumlah As System.Windows.Forms.TextBox
+    Friend WithEvents btn_add As System.Windows.Forms.Button
+    Friend WithEvents dgvterimabarang As System.Windows.Forms.DataGridView
+    Friend WithEvents btnsimpan As System.Windows.Forms.Button
+    Friend WithEvents btntbatal As System.Windows.Forms.Button
+    Friend WithEvents btntutup As System.Windows.Forms.Button
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents lblitem As System.Windows.Forms.Label
+    Friend WithEvents lbl_total As System.Windows.Forms.Label
 End Class
