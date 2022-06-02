@@ -125,6 +125,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TransPenjualanBarang.Designer.vb">
+      <DependentUpon>TransPenjualanBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransPenjualanBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TransTerimaBarang.Designer.vb">
       <DependentUpon>TransTerimaBarang.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransPenjualanBarang.resx">
+      <DependentUpon>TransPenjualanBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransTerimaBarang.resx">
       <DependentUpon>TransTerimaBarang.vb</DependentUpon>
