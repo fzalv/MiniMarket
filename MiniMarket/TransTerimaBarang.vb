@@ -9,6 +9,9 @@ Public Class TransTerimaBarang
         lbl_alamatsup.Text = ""
         lbl_tlpsup.Text = ""
         Call kolom()
+        lblitem.Text = 0
+        lbl_total.Text = 0
+        cbkodesupplier.Text = ""
     End Sub
 
     Sub munculsupplier()

@@ -56,6 +56,7 @@ Partial Class TransTerimaBarang
         Me.Label12 = New System.Windows.Forms.Label()
         Me.lblitem = New System.Windows.Forms.Label()
         Me.lbl_total = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.dgvterimabarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -255,7 +256,7 @@ Partial Class TransTerimaBarang
         '
         Me.Harga.AutoSize = True
         Me.Harga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Harga.Location = New System.Drawing.Point(330, 160)
+        Me.Harga.Location = New System.Drawing.Point(308, 160)
         Me.Harga.Name = "Harga"
         Me.Harga.Size = New System.Drawing.Size(53, 20)
         Me.Harga.TabIndex = 0
@@ -267,12 +268,13 @@ Partial Class TransTerimaBarang
         Me.txtkode.Name = "txtkode"
         Me.txtkode.Size = New System.Drawing.Size(100, 20)
         Me.txtkode.TabIndex = 2
+        Me.txtkode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblharga
         '
         Me.lblharga.AutoSize = True
         Me.lblharga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblharga.Location = New System.Drawing.Point(389, 160)
+        Me.lblharga.Location = New System.Drawing.Point(367, 160)
         Me.lblharga.Name = "lblharga"
         Me.lblharga.Size = New System.Drawing.Size(14, 20)
         Me.lblharga.TabIndex = 0
@@ -294,6 +296,7 @@ Partial Class TransTerimaBarang
         Me.txtjumlah.Name = "txtjumlah"
         Me.txtjumlah.Size = New System.Drawing.Size(39, 20)
         Me.txtjumlah.TabIndex = 2
+        Me.txtjumlah.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btn_add
         '
@@ -343,7 +346,7 @@ Partial Class TransTerimaBarang
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(547, 367)
+        Me.Label12.Location = New System.Drawing.Point(439, 369)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(41, 20)
         Me.Label12.TabIndex = 0
@@ -353,22 +356,31 @@ Partial Class TransTerimaBarang
         '
         Me.lblitem.AutoSize = True
         Me.lblitem.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblitem.Location = New System.Drawing.Point(594, 367)
+        Me.lblitem.Location = New System.Drawing.Point(486, 369)
         Me.lblitem.Name = "lblitem"
-        Me.lblitem.Size = New System.Drawing.Size(14, 20)
+        Me.lblitem.Size = New System.Drawing.Size(18, 20)
         Me.lblitem.TabIndex = 0
-        Me.lblitem.Text = "-"
+        Me.lblitem.Text = "0"
         '
         'lbl_total
         '
         Me.lbl_total.AutoSize = True
-        Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_total.Location = New System.Drawing.Point(481, 364)
+        Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_total.Location = New System.Drawing.Point(595, 368)
         Me.lbl_total.Name = "lbl_total"
-        Me.lbl_total.Size = New System.Drawing.Size(18, 20)
+        Me.lbl_total.Size = New System.Drawing.Size(19, 20)
         Me.lbl_total.TabIndex = 0
         Me.lbl_total.Text = "0"
-        Me.lbl_total.Visible = False
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(537, 368)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(59, 20)
+        Me.Label13.TabIndex = 0
+        Me.Label13.Text = "Total :"
         '
         'TransTerimaBarang
         '
@@ -392,6 +404,7 @@ Partial Class TransTerimaBarang
         Me.Controls.Add(Me.lbl_tgl)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblitem)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.lblharga)
         Me.Controls.Add(Me.Label12)
@@ -448,4 +461,5 @@ Partial Class TransTerimaBarang
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents lblitem As System.Windows.Forms.Label
     Friend WithEvents lbl_total As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class
